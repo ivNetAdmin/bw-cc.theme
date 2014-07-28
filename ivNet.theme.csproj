@@ -81,7 +81,6 @@
     <Content Include="Styles\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
-    <Content Include="Styles\Site.css" />
     <Content Include="Styles\Web.config" />
     <Content Include="Views\Document.cshtml" />
     <Content Include="Views\Layout.cshtml" />
@@ -117,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Styles\Site.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
