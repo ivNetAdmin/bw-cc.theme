@@ -1,0 +1,6 @@
+Name: bw-cc theme
+Author: ivNet plc
+Description: Theme based on Bootstrap
+Tags: bootstramp, ivnet
+Website: http://www.ivnet.co.uk
+Zones: Header, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer
