@@ -19,7 +19,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    Script.Include("jquery-1.10.2.min.js").AtFoot();
+    Script.Include("jquery-1.10.2.min.js").AtHead();
     Script.Include("bootstrap.min.js").AtFoot();
     Script.Include("ie10-viewport-bug-workaround.js").AtFoot();
 
@@ -27,7 +27,6 @@
     
     Style.Include("sticky-footer.css");
     Style.Include("site.min.css");
-
     
     WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 }
@@ -35,14 +34,56 @@
 <nav class="group">
     @Display(Model.Navigation)
 </nav>
-<header class="group">
-    @Display(Model.Header)
-</header>
 
-@Display(Model.Content)
+@if (Model.Header != null) {
+    <header class="group">
+        @Display(Model.Header)
+    </header>
+}
+<div class="page-content container-fluid group">
+    @if (Model.AsideFirst != null)
+    {
+        if (Model.AsideSecond != null)
+        {
+            // two asides split widths 80%/20%
+            <div class="content-block col-md-2">
+                @Display(Model.AsideFirst)
+            </div>
+            <div class="content-block col-md-10">
+                @Display(Model.AsideSecond)
+            </div>
+        }
+        else
+        {
+            // first aside width 20% & content 80%
+            <div class="content-block col-md-2">
+                @Display(Model.AsideFirst)
+            </div>
+            <div class="content-block col-md-10">
+                @Display(Model.Content)
+            </div>
+        }
+    }
+    else if (Model.AsideSecond != null)
+    {
+        // second aside width 20% & content 80%
+        <div class="content-block col-md-10">
+            @Display(Model.Content)
+        </div>
+        <div class="content-block col-md-2">
+            @Display(Model.AsideSecond)
+        </div>
 
-<div class="footer">
-    <div class="container">
-        @Display(Model.Footer)
-    </div>
+    }
+    else
+    {
+        // just content and no asides
+        <div class="content-block col-md-12">
+            @Display(Model.Content)
+        </div>
+    }
 </div>
+<footer class="footer">
+    @Display(Model.Footer)
+</footer>
+

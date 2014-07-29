@@ -99,6 +99,7 @@
     <Content Include="Styles\Web.config" />
     <Content Include="Views\Document.cshtml" />
     <Content Include="Views\Layout.cshtml" />
+    <Content Include="Views\Parts.MenuWidget-Navigation.cshtml" />
     <Content Include="Views\Shared\keep.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Theme.txt" />
@@ -120,7 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Views\Parts.MenuWidget-Navigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fonts\Web.config" />
