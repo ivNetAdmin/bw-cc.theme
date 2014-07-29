@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Views\Parts.MenuWidget-Navigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fonts\Web.config" />
