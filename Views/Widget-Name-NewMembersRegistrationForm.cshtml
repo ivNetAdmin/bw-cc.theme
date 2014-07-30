@@ -14,7 +14,7 @@
     editor.Zones["Sidebar"].Items.Clear();
 }
 
-@using (Html.BeginFormAntiForgeryPost(Url.Action("Create", "Item", new { area = "Orchard.CustomForms", id = Model.ContentItem.Id }), FormMethod.Post, new { @class = "form-horizontal group" }))
+@using (Html.BeginFormAntiForgeryPost(Url.Action("Create", "Member", new { area = "ivNet.Club", id = Model.ContentItem.Id }), FormMethod.Post, new { @class = "form-horizontal group" }))
 {
     @Html.ValidationSummary()
     // Model is a Shape, calling Display() so that it is rendered using the most specific template for its Shape type

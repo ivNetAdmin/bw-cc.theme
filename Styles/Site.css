@@ -62,6 +62,9 @@ div.content-block article {
   padding: 10px;
   background-color: #f5f5f5;
   border: solid 1px #ddd;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 div.tripel-first {
   padding-left: 8px;
@@ -85,17 +88,28 @@ p {
 div.zone-tripel-first article {
   margin-bottom: 10px;
 }
-div.single-block {
+div.aside-first {
   padding-left: 10px;
 }
-div.single-block article {
+div.aside-first article {
   margin-bottom: 10px;
 }
-article.widget-html-widget img {
+div.page-content article.widget-html-widget img {
   margin: 5px 0;
+  border: solid 1px #808080;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 3px 3px 3px #808080;
+  -webkit-box-shadow: 3px 3px 3px #808080;
+  box-shadow: 3px 3px 3px #808080;
+  margin-bottom: 5px;
 }
 h1 {
   margin-top: 10px;
   font-size: 24px;
+}
+header.page-image-header {
+  margin-top: 46px;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=Site.css.map */

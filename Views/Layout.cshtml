@@ -37,7 +37,7 @@
 
 @if (Model.Header != null)
 {
-    <header class="group">
+    <header class="page-image-header group">
         @Display(Model.Header)
     </header>
 }
@@ -47,7 +47,7 @@
         if (Model.AsideSecond != null)
         {
             // two asides split widths 80%/20%
-            <div class="content-block col-md-2">
+            <div class="content-block aside-first col-md-2">
                 @Display(Model.AsideFirst)
             </div>
             <div class="content-block col-md-10">
@@ -57,7 +57,7 @@
         else
         {
             // first aside width 20% & content 80%
-            <div class="content-block col-md-2">
+            <div class="content-block aside-first col-md-2">
                 @Display(Model.AsideFirst)
             </div>
             <div class="content-block col-md-10">
@@ -68,7 +68,7 @@
     else if (Model.AsideSecond != null)
     {
         // second aside width 20% & content 80%
-        <div class="content-block col-md-10">
+        <div class="content-block aside-first col-md-10">
             @Display(Model.Content.Content)
         </div>
         <div class="content-block col-md-2">
@@ -81,7 +81,7 @@
         if (Model.Content != null && Request.Path != "/")
         {
             // just content and no asides
-            <div class="content-block col-md-12 single-block">
+            <div class="content-block col-md-12 aside-first">
                 @Display(Model.Content)
             </div>
         }
