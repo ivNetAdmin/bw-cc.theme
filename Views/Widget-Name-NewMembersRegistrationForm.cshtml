@@ -1,4 +1,8 @@
 ﻿@{
+    
+    Style.Include("datepicker.min.css");
+    Script.Include("bootstrap-datepicker.js").AtFoot();
+    
     dynamic editor = Model.Editor;
 
     if (TempData.ContainsKey("CustomFormWidget.InvalidCustomFormState"))
@@ -10,7 +14,7 @@
     editor.Zones["Sidebar"].Items.Clear();
 }
 
-@using (Html.BeginFormAntiForgeryPost(Url.Action("Create", "Item", new { area = "Orchard.CustomFormsx", id = Model.ContentItem.Id }), FormMethod.Post, new { @class = "form-horizontal group" }))
+@using (Html.BeginFormAntiForgeryPost(Url.Action("Create", "Item", new { area = "Orchard.CustomForms", id = Model.ContentItem.Id }), FormMethod.Post, new { @class = "form-horizontal group" }))
 {
     @Html.ValidationSummary()
     // Model is a Shape, calling Display() so that it is rendered using the most specific template for its Shape type
@@ -32,3 +36,14 @@
         <button type="submit" name="submit.Save" value="submit.Save">@T("Submit")</button>
     </fieldset>*@
 }
+
+<script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+
+                $('.datepicker').datepicker({
+                    format: "dd/mm/yyyy"
+                });
+
+            });
+</script>    
