@@ -1,0 +1,34 @@
+﻿@{
+    dynamic editor = Model.Editor;
+
+    if (TempData.ContainsKey("CustomFormWidget.InvalidCustomFormState"))
+    {
+        editor = TempData["CustomFormWidget.InvalidCustomFormState"];
+    }
+
+    // remove default Save/Publish buttons
+    editor.Zones["Sidebar"].Items.Clear();
+}
+
+@using (Html.BeginFormAntiForgeryPost(Url.Action("Create", "Item", new { area = "Orchard.CustomFormsx", id = Model.ContentItem.Id }), FormMethod.Post, new { @class = "form-horizontal group" }))
+{
+    @Html.ValidationSummary()
+    // Model is a Shape, calling Display() so that it is rendered using the most specific template for its Shape type
+
+    @Html.Partial("_RegistrationForm")
+
+    @Html.Hidden("returnUrl", Request.RawUrl)
+    ;
+
+    <br>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+    </div>
+
+
+    @*<fieldset class="submit-button">
+        <button type="submit" name="submit.Save" value="submit.Save">@T("Submit")</button>
+    </fieldset>*@
+}

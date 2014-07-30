@@ -102,6 +102,8 @@
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Parts.MenuWidget-Navigation.cshtml" />
     <Content Include="Views\Shared\keep.cshtml" />
+    <Content Include="Views\Widget-Name-NewMembersRegistrationForm.cshtml" />
+    <Content Include="Views\_RegistrationForm.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />

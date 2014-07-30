@@ -1,0 +1,361 @@
+﻿
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_Surname_Value" class="control-label col-xs-2">Surname:</label>
+    <div class="col-xs-3">
+        <input type="text" id="NewMemberRegistrationForm_Surname_Value" name="NewMemberRegistrationForm.Surname.Value"
+               required="required" autofocus="autofocus" class="form-control" maxlength="50" placeholder="Required">
+    </div>
+    <label for="NewMemberRegistrationForm_Firstname_Value" class="control-label col-xs-2">Firstname:</label>
+    <div class="col-xs-3">
+        <input type="text" id="NewMemberRegistrationForm_Firstname_Value" name="NewMemberRegistrationForm.Firstname.Value"
+               required="required"  class="form-control" maxlength="50" placeholder="Required">
+    </div>
+</div>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_Nickname_Value" class="control-label col-xs-2">Nickname:</label>
+    <div class="col-xs-8">
+        <input type="text" id="NewMemberRegistrationForm_Nickname_Value" name="NewMemberRegistrationForm.Nickname.Value"
+                 class="form-control" maxlength="50">
+    </div>
+</div>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_Address_Value" class="control-label col-xs-2">Address:</label>
+    <div class="col-xs-8">
+        <input type="text" id="NewMemberRegistrationForm_Address_Value" name="NewMemberRegistrationForm.Address.Value"
+               required="required"  class="form-control" maxlength="50" placeholder="Required">
+    </div>
+</div>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_Town_Value" class="control-label col-xs-2">Town:</label>
+    <div class="col-xs-3">
+        <input type="text" id="NewMemberRegistrationForm_Town_Value" name="NewMemberRegistrationForm.Town.Value"
+               class="form-control" maxlength="50">
+    </div>
+    <label for="NewMemberRegistrationForm_Postcode_Value" class="control-label col-xs-2">Postcode:</label>
+    <div class="col-xs-3">
+        <input type="text" id="NewMemberRegistrationForm_Postcode_Value" name="NewMemberRegistrationForm.Postcode.Value"
+               required="required"  class="form-control" maxlength="50" placeholder="Required">
+    </div>
+</div>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_Email_Value" class="control-label col-xs-2">Email:</label>
+    <div class="col-xs-3">
+        <input type="email" id="NewMemberRegistrationForm_Email_Value" name="NewMemberRegistrationForm.Email.Value"
+               required="required" placeholder="Required"  class="form-control" maxlength="50">
+    </div>
+    <label for="NewMemberRegistrationForm_Telephone_Value" class="control-label col-xs-2">Telephone:</label>
+    <div class="col-xs-3">
+        <input type="tel" id="NewMemberRegistrationForm_Telephone_Value" name="NewMemberRegistrationForm.Telephone.Value"
+               required="required" placeholder="Required" class="form-control" maxlength="50">
+    </div>
+</div>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_Type_Value" class="control-label col-xs-2">Member Type:</label>
+    <div class="col-xs-8">
+        <select id="NewMemberRegistrationForm_Type_Value" name="NewMemberRegistrationForm.Type.Value" required="required">
+            <option>Guardian</option>
+            <option>Junior</option>
+            <option>Senior</option>
+        </select>
+    </div>
+</div>
+<hr/>
+<h3>Junior 1</h3>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_J1Surname_Value" class="control-label col-xs-2">Surname:</label>
+    <div class="col-xs-3">
+        <input type="text" id="NewMemberRegistrationForm_J1Surname_Value" name="NewMemberRegistrationForm.J1Surname.Value"
+               required="required" autofocus="autofocus" class="form-control" maxlength="50" placeholder="Required">
+    </div>
+    <label for="NewMemberRegistrationForm_J1Firstname_Value" class="control-label col-xs-2">Firstname:</label>
+    <div class="col-xs-3">
+        <input type="text" id="NewMemberRegistrationForm_J1Firstname_Value" name="NewMemberRegistrationForm.J1Firstname.Value"
+               required="required" class="form-control" maxlength="50" placeholder="Required">
+    </div>
+</div>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_J1Nickname_Value" class="control-label col-xs-2">Nickname:</label>
+    <div class="col-xs-8">
+        <input type="text" id="NewMemberRegistrationForm_J1Nickname_Value" name="NewMemberRegistrationForm.J1Nickname.Value"
+               class="form-control" maxlength="50">
+    </div>
+</div>
+<div class="form-group">
+    <label for="NewMemberRegistrationForm_J1DOB_Editor_Date" class="control-label col-xs-2">DOB:</label>
+    <div class="col-xs-8">
+        <label class="forpicker" for="NewMemberRegistrationForm_J1DOB_Editor_Date">Date</label>
+        <span class="date"><input class="text-box single-line hinted hasCalendarsPicker" id="NewMemberRegistrationForm_J1DOB_Editor_Date" name="NewMemberRegistrationForm.J1DOB.Editor.Date" type="text" value=""></span>
+    </div>
+</div>
+
+@*<div class="form-group">
+        <label class="control-label col-xs-3" for="inputPassword">Password:</label>
+        <div class="col-xs-9">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="confirmPassword">Confirm Password:</label>
+        <div class="col-xs-9">
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="firstName">First Name:</label>
+        <div class="col-xs-9">
+            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="lastName">Last Name:</label>
+        <div class="col-xs-9">
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="phoneNumber">Phone:</label>
+        <div class="col-xs-9">
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Date of Birth:</label>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option>Date</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option>Month</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option>Year</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="postalAddress">Address:</label>
+        <div class="col-xs-9">
+            &lt;textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address"&gt;&lt;/textarea&gt;
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="ZipCode">Zip Code:</label>
+        <div class="col-xs-9">
+            <input type="text" class="form-control" id="ZipCode" placeholder="Zip Code">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Gender:</label>
+        <div class="col-xs-2">
+            <label class="radio-inline">
+                <input type="radio" name="genderRadios" value="male"> Male
+            </label>
+        </div>
+        <div class="col-xs-2">
+            <label class="radio-inline">
+                <input type="radio" name="genderRadios" value="female"> Female
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <label class="checkbox-inline">
+                <input type="checkbox" value="news"> Send me latest news and updates.
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <label class="checkbox-inline">
+                <input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
+            </label>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <input type="submit" class="btn btn-primary" value="Submit">
+            <input type="reset" class="btn btn-default" value="Reset">
+        </div>
+    </div>*@
+
+@*<div class="edit-item-primary">
+    <div class="edit-item-content">
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Surname_Value" class="required">Surname</label>
+            <input type="text" id="NewMemberRegistrationForm_Surname_Value" name="NewMemberRegistrationForm.Surname.Value" value="" required="required" autofocus="autofocus" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Firstname_Value" class="required">Firstname</label>
+            <input type="text" id="NewMemberRegistrationForm_Firstname_Value" name="NewMemberRegistrationForm.Firstname.Value" value="" required="required" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Nickname_Value">Nickname</label>
+            <input type="text" id="NewMemberRegistrationForm_Nickname_Value" name="NewMemberRegistrationForm.Nickname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Address_Value" class="required">Address</label>
+            <input type="text" id="NewMemberRegistrationForm_Address_Value" name="NewMemberRegistrationForm.Address.Value" value="" required="required" class="text medium" maxlength="255">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Town_Value">Town</label>
+            <input type="text" id="NewMemberRegistrationForm_Town_Value" name="NewMemberRegistrationForm.Town.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Postcode_Value" class="required">Postcode</label>
+            <input type="text" id="NewMemberRegistrationForm_Postcode_Value" name="NewMemberRegistrationForm.Postcode.Value" value="" required="required" class="text medium" maxlength="10">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Email_Value" class="required">Email</label>
+            <input type="email" id="NewMemberRegistrationForm_Email_Value" name="NewMemberRegistrationForm.Email.Value" value="" required="required" class="text medium" maxlength="100">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Telephone_Value" class="required">Telephone</label>
+            <input type="tel" id="NewMemberRegistrationForm_Telephone_Value" name="NewMemberRegistrationForm.Telephone.Value" value="" required="required" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J1Surname_Value">J1Surname</label>
+            <input type="text" id="NewMemberRegistrationForm_J1Surname_Value" name="NewMemberRegistrationForm.J1Surname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J1Firstname_Value">J1Firstname</label>
+            <input type="text" id="NewMemberRegistrationForm_J1Firstname_Value" name="NewMemberRegistrationForm.J1Firstname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J1Nickname_Value">J1Nickname</label>
+            <input type="text" id="NewMemberRegistrationForm_J1Nickname_Value" name="NewMemberRegistrationForm.J1Nickname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J2Surname_Value">J2Surname</label>
+            <input type="text" id="NewMemberRegistrationForm_J2Surname_Value" name="NewMemberRegistrationForm.J2Surname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J2Firstname_Value">J2Firstname</label>
+            <input type="text" id="NewMemberRegistrationForm_J2Firstname_Value" name="NewMemberRegistrationForm.J2Firstname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J2Nickname_Value">J2Nickname</label>
+            <input type="text" id="NewMemberRegistrationForm_J2Nickname_Value" name="NewMemberRegistrationForm.J2Nickname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J3Surname_Value">J3Surname</label>
+            <input type="text" id="NewMemberRegistrationForm_J3Surname_Value" name="NewMemberRegistrationForm.J3Surname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J3Firstname_Value">J3Firstname</label>
+            <input type="text" id="NewMemberRegistrationForm_J3Firstname_Value" name="NewMemberRegistrationForm.J3Firstname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J3Nickname_Value">J3Nickname</label>
+            <input type="text" id="NewMemberRegistrationForm_J3Nickname_Value" name="NewMemberRegistrationForm.J3Nickname.Value" value="" class="text medium" maxlength="50">
+
+        </fieldset>
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Notes_Text">J1Notes</label>
+            <input class="text" id="NewMemberRegistrationForm_Notes_Text" name="NewMemberRegistrationForm.Notes.Text" type="text" value="">
+        </fieldset>
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J2Notes_Text">J2Notes</label>
+            <input class="text" id="NewMemberRegistrationForm_J2Notes_Text" name="NewMemberRegistrationForm.J2Notes.Text" type="text" value="">
+        </fieldset>
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J3Notes_Text">J3Notes</label>
+            <input class="text" id="NewMemberRegistrationForm_J3Notes_Text" name="NewMemberRegistrationForm.J3Notes.Text" type="text" value="">
+        </fieldset>
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J1DOB_Editor_Date">J1DOB</label>
+
+
+            <label class="forpicker" for="NewMemberRegistrationForm_J1DOB_Editor_Date">Date</label>
+            <span class="date"><input class="text-box single-line hinted hasCalendarsPicker" id="NewMemberRegistrationForm_J1DOB_Editor_Date" name="NewMemberRegistrationForm.J1DOB.Editor.Date" type="text" value=""></span>
+
+
+
+
+        </fieldset>
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J2DOB_Editor_Date">J2DOB</label>
+
+
+            <label class="forpicker" for="NewMemberRegistrationForm_J2DOB_Editor_Date">Date</label>
+            <span class="date"><input class="text-box single-line hinted hasCalendarsPicker" id="NewMemberRegistrationForm_J2DOB_Editor_Date" name="NewMemberRegistrationForm.J2DOB.Editor.Date" type="text" value=""></span>
+
+
+
+
+        </fieldset>
+        <fieldset>
+            <label for="NewMemberRegistrationForm_J3DOB_Editor_Date">J3DOB</label>
+
+
+            <label class="forpicker" for="NewMemberRegistrationForm_J3DOB_Editor_Date">Date</label>
+            <span class="date"><input class="text-box single-line hinted hasCalendarsPicker" id="NewMemberRegistrationForm_J3DOB_Editor_Date" name="NewMemberRegistrationForm.J3DOB.Editor.Date" type="text" value=""></span>
+
+
+
+
+        </fieldset>
+
+        <fieldset>
+            <label for="NewMemberRegistrationForm_Type_Value" class="required">Type</label>
+            <select id="NewMemberRegistrationForm_Type_Value" name="NewMemberRegistrationForm.Type.Value">
+                <option>Guardian</option>
+                <option>Junior</option>
+                <option>Senior</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <label for="OwnerEditor_Owner">Owner</label>
+            <input class="text-box single-line" id="OwnerEditor_Owner" name="OwnerEditor.Owner" type="text" value="ivNetAdmin">
+
+        </fieldset>
+        <fieldset>
+            <input id="CommonPart_ContainerId" name="CommonPart.ContainerId" type="hidden" value="">
+        </fieldset>
+    </div>
+</div>
+@*<div class="edit-item-secondary group">
+    <div class="edit-item-sidebar group">
+
+    </div>
+</div>
+<input id="returnUrl" name="returnUrl" type="hidden" value="/new-members">*@
