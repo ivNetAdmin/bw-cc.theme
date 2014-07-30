@@ -86,32 +86,31 @@
         }
     }
 
-    @if (Model.TripelFirst != null || Model.TripelSecond != null || Model.TripelThird != null)
-    {
-         if(Model.TripelThird != null) {
-              <div class="content-block col-md-4">
-                  @Display(Model.TripelFirst)
-              </div>
-              <div class="content-block col-md-4">
-                  @Display(Model.TripelSecond)
-              </div>
-              <div class="content-block col-md-4">
-                  @Display(Model.TripelThird)
-              </div>
-         }
-         else if (Model.TripelSecond != null) {
-             <div class="content-block col-md-6">
-                 @Display(Model.TripelFirst)
-             </div>
-             <div class="content-block col-md-6">
-                 @Display(Model.TripelSecond)
-             </div>
-         }
-         else {
-              <div class="content-block col-md-12">
-                 @Display(Model.TripelFirst)
-             </div>
-         }
+    @if (Model.TripelFirst != null || Model.TripelSecond != null || Model.TripelThird != null) {
+        if (Model.TripelThird != null) {
+            <div class="content-block tripel-first col-md-4">
+                @Display(Model.TripelFirst)
+            </div>
+            <div class="content-block col-md-4">
+                @Display(Model.TripelSecond)
+            </div>
+            <div class="content-block col-md-4">
+                @Display(Model.TripelThird)
+            </div>
+        }
+        else if (Model.TripelSecond != null) {
+            <div class="content-block col-md-6">
+                @Display(Model.TripelFirst)
+            </div>
+            <div class="content-block tripel-first col-md-6">
+                @Display(Model.TripelSecond)
+            </div>
+        }
+        else {
+            <div class="content-block tripel-first col-md-12">
+                @Display(Model.TripelFirst)
+            </div>
+        }
     }
 </div>
 <footer class="footer">
