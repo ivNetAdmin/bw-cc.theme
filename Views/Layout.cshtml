@@ -7,27 +7,27 @@
 
     Style.Include("bootstrap.min.css");
     Style.Include("bootstrap-theme.min.css");
-     
-    
+
+
     Script.Include("modernizr-2.6.2.js").AtHead();
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
     Script.Include("jquery-1.10.2.min.js").AtHead();
     Script.Include("bootstrap.min.js").AtFoot();
     Script.Include("ie10-viewport-bug-workaround.js").AtFoot();
 
     <!-- Custom styles for this template -->
-    
+
     Style.Include("sticky-footer.css");
     Style.Include("site.min.css");
-    
+
     WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 }
 
@@ -35,7 +35,8 @@
     @Display(Model.Navigation)
 </nav>
 
-@if (Model.Header != null) {
+@if (Model.Header != null)
+{
     <header class="group">
         @Display(Model.Header)
     </header>
@@ -68,7 +69,7 @@
     {
         // second aside width 20% & content 80%
         <div class="content-block col-md-10">
-            @Display(Model.Content)
+            @Display(Model.Content.Content)
         </div>
         <div class="content-block col-md-2">
             @Display(Model.AsideSecond)
@@ -77,10 +78,40 @@
     }
     else
     {
-        // just content and no asides
-        <div class="content-block col-md-12">
-            @Display(Model.Content)
-        </div>
+        if (Model.Content != null && Request.Path != "/") {
+            // just content and no asides
+            <div class="content-block col-md-12"> 
+                @Display(Model.Content)
+            </div>
+        }
+    }
+
+    @if (Model.TripelFirst != null || Model.TripelSecond != null || Model.TripelThird != null)
+    {
+         if(Model.TripelThird != null) {
+              <div class="content-block col-md-4">
+                  @Display(Model.TripelFirst)
+              </div>
+              <div class="content-block col-md-4">
+                  @Display(Model.TripelSecond)
+              </div>
+              <div class="content-block col-md-4">
+                  @Display(Model.TripelThird)
+              </div>
+         }
+         else if (Model.TripelSecond != null) {
+             <div class="content-block col-md-6">
+                 @Display(Model.TripelFirst)
+             </div>
+             <div class="content-block col-md-6">
+                 @Display(Model.TripelSecond)
+             </div>
+         }
+         else {
+              <div class="content-block col-md-12">
+                 @Display(Model.TripelFirst)
+             </div>
+         }
     }
 </div>
 <footer class="footer">

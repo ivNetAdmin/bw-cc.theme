@@ -73,6 +73,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\Web.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
@@ -123,7 +124,6 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Fonts\Web.config" />
     <Content Include="Styles\bootstrap-theme.css.map" />
     <Content Include="Styles\bootstrap.css.map" />
   </ItemGroup>
