@@ -123,9 +123,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Styles\datepicker.css.map" />
     <Content Include="Styles\datepicker.less" />
