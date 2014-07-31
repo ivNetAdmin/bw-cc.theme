@@ -21,8 +21,7 @@
 
     @Html.Partial("_RegistrationForm")
 
-    @Html.Hidden("returnUrl", Request.RawUrl)
-    ;
+    @Html.Hidden("returnUrl", "/new-members-thank-you")    
 
     <br>
     <div class="form-group">
@@ -30,20 +29,22 @@
             <input type="submit" class="btn btn-primary" value="Submit">
         </div>
     </div>
-
-
-    @*<fieldset class="submit-button">
-        <button type="submit" name="submit.Save" value="submit.Save">@T("Submit")</button>
-    </fieldset>*@
 }
 
 <script type="text/javascript">
-            // When the document is ready
-            $(document).ready(function () {
+    // When the document is ready
+    $(document).ready(function () {
 
-                $('.datepicker').datepicker({
-                    format: "dd/mm/yyyy"
-                });
+        $('.datepicker').datepicker({
+            format: "dd/mm/yyyy"
+        });
 
-            });
-</script>    
+        $('select#NewMemberRegistrationForm_Type_Value').bind('change', function() {
+            if (this.value == "Guardian") {
+                $('div.junior-section').show();
+            } else {
+                $('div.junior-section').hide();
+            }
+        });
+    });
+</script>
